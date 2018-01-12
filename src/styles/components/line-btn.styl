@@ -1,0 +1,39 @@
+.line-btn
+    position relative
+    overflow hidden
+    display inline-block
+    padding 10px 38px
+    white-space nowrap
+    font-size 18px
+    font-weight 800
+    font-family $font-beta
+    letter-spacing 0.2em
+    text-transform uppercase
+    text-align center
+    text-decoration none
+    color inherit
+    background 0
+    border 0
+    border-radius 0
+    cursor pointer
+
+    &::before
+        content ""
+        position absolute
+        z-index -1
+        left 0
+        right 0
+        top 0
+        bottom 0
+        margin auto
+        height 8px
+        background: $colors["brand"];
+        transition .2s
+
+    &:hover
+    &:focus
+        &::before
+            height 100%
+
+    &:active
+        color rgba(#000, 0.3)

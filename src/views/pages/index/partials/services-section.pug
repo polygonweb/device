@@ -1,0 +1,26 @@
+section.services-section
+    .services-section__inner.container
+
+        .services-section__nav
+            ul.service-nav
+                each item in serviceData
+                    li.service-nav__item
+                        button.line-btn.service-nav__link(
+                            type="button",
+                            name="service-name",
+                            value=item.id,
+                            class=item.isActive ? 'service-nav__link_active' : null
+                        )
+                            | #{item.title}
+
+        .services-section__desc
+            each item in serviceData
+                .services-section__service(
+                    id=item.id,
+                    class={
+                        [`services-section__service_${item.id}`]: true,
+                        'services-section__service_active': !!item.isActive
+                    }
+                )
+                    h3.services-section__title.title #{item.title}
+                    .services-section__text !{item.text}

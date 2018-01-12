@@ -1,0 +1,6 @@
+mixin icon(name, basePath, prefix)
+    - var basePath = basePath || 'assets/img/icons.svg'
+    - var prefix = prefix || 'icon_'
+    - var iconName = prefix + name;
+    svg.icon(class=iconName, width="16", height="16")&attributes(attributes)
+        use(xlink:href=basePath+'#' + iconName)

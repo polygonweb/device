@@ -1,0 +1,16 @@
+include product-grid
+
+.search-layout
+    .container
+        .search-layout__inner
+            .search-layout__side
+                include filter-panel
+
+            .search-layout__main
+                include sort-panel
+
+                .search-results
+                    +productGrid(products)
+
+                    //- pageList, activePage
+                    +pagination([1, 2, 3], 1)

@@ -1,0 +1,43 @@
+$grid = {
+    "gutter": 20px,
+    "col-width": 60px,
+    "grid-width": 1160px
+}
+
+$fallback-font = unquote('BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif');
+
+$font = {
+    size: 14px,
+    family: {
+        "alpha": "Open Sans",
+        "alpha-fallback": $fallback-font,
+        "beta": "Gilroy",
+        "beta-fallback": $fallback-font
+    }
+};
+
+$font-alpha = $font["family"]["alpha"], $font["family"]["alpha-fallback"]
+$font-beta = $font["family"]["beta"], $font["family"]["beta-fallback"]
+
+$colors = {
+    "text": #000,
+    "brand-light": #f7e184,
+    "brand-bg": #f7e296,
+    "brand": #f0c52e,
+    "danger": #f6dada,
+    "dark": #464646,
+    "green": #7eae29,
+    "grey": #e5e5e5
+};
+
+// высота шапки в панелях фильтров
+$head-filter-height = 70px
+
+//временная функция для анимации появления элементов
+$curtain-ease = cubic-bezier(0.9, 0, 0.1, 1)
+
+$showCurtain($time) {
+    animation:
+        showCurtain $time $curtain-ease both,
+        curtainTransformOrigin $time step-end both;
+}

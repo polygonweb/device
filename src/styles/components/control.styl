@@ -1,0 +1,99 @@
+.control
+    position relative
+    display inline-block
+    display inline-flex
+    align-items flex-start
+
+    &__input
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        opacity 0
+        cursor pointer
+
+    &__icon
+        margin-right: $grid["gutter"];
+        position relative
+        flex 0 0 auto
+        box-sizing border-box
+        display inline-block
+        font-size 23px
+        width  1em
+        height 1em
+
+        &::before
+            content ""
+            display inline-block
+            opacity 0
+            transition .2s
+
+    &__content
+        flex 1 1 0%
+        padding-top 4px
+        font-weight 300
+        letter-spacing 0.04em
+
+    &__input:checked + &__icon::before
+        opacity: 1
+
+    // &__input:focus + &__icon
+    //     // box-shadow: 0 0 0 2px $colors["brand"];
+    //     // outline #3b99fc auto 5px
+
+
+    // checkbox
+    &_type_checkbox &__icon
+        background #dbdbdb
+
+        &::before
+            position absolute
+            left   8px
+            bottom 8px
+            transform translateY(-4px) rotate(45deg) skewY(-3deg)
+            width 4px
+            height 8px
+            border-style solid
+            border-width 2px
+            border-top-width 0
+            border-left-width 0
+
+    &_type_checkbox:hover &__icon
+        background #cecece
+
+    &_type_checkbox:active &__icon
+        background #c4c4c4
+
+    &_type_checkbox &__input:checked + &__icon::before
+        transform translateY(0) rotate(45deg) skewY(-3deg)
+
+
+    // radio
+    &_type_radio &__icon
+        padding 5px
+        border 2px solid #c6c6c6
+        border-radius 50%
+
+        &::before
+            transform scale(0)
+            display block
+            box-sizing border-box
+            width 100%
+            height 100%
+            border 2px solid
+            border-radius inherit
+
+    &_type_radio:hover &__icon
+        border-color #bcbcbc
+
+    &_type_radio:active &__icon
+        border-color #acacac
+
+    &_type_radio &__input:checked + &__icon::before
+        transform scale(1)
+
+    // block view
+    // &_block
+    //     display block
+    //     display flex

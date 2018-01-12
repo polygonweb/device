@@ -1,0 +1,8 @@
+section.vendors-section
+    .container
+        .vendors-grid
+            .vendors-grid__inner
+                each vendor in vendors
+                    .vendors-grid__cell
+                        a.vendor(title=vendor.title)
+                            img.vendor__image(src=vendor.image, alt=vendor.title)

@@ -1,0 +1,18 @@
+.form-grid
+    $offset = $grid["gutter"]
+
+    margin-left  -1 * $offset
+    margin-right -1 * $offset
+    display flex
+    flex-wrap wrap
+
+    &__cell
+        display inline-block
+        vertical-align top
+        box-sizing border-box
+        padding $offset
+        flex 1 1 100%;
+
+        &_half
+            width 50%
+            flex-basis 50%

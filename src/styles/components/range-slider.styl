@@ -1,0 +1,54 @@
+.range-slider
+    margin-bottom 37px
+    position relative
+
+    // &__input
+
+    &__track
+        position relative
+        height 2px
+        background #dbdbdb
+
+    &__fill
+        position absolute
+        top 0
+        left 0
+        height 100%
+        background: $colors["green"];
+
+    &__thumb
+        position absolute
+        left 0
+        top 1px
+        transform translate(-50%, -50%)
+        box-sizing border-box
+        width  14px
+        height 14px
+        border 2px solid
+        border-radius 50%
+        background #eee
+        transition .16s
+
+        &:active
+            border-color #fff
+            background: $colors["green"];
+            box-shadow:
+                0 0 0 1px #fff,
+                0 5px 5px rgba(#000, 0.4);
+
+    &__value
+        position absolute
+        left 0
+        top 100%
+        margin-top 6px
+        opacity 0.2
+        font-family $font-beta
+        font-weight 300
+        white-space nowrap
+
+    &__output
+        display inline
+
+    &__thumb_max &__value
+        left 50%
+        transform translateX(-50%)

@@ -1,0 +1,41 @@
+.breadcrumbs
+    margin 0
+    padding 0
+    list-style none
+    display flex
+    flex-wrap wrap
+    align-items baseline
+
+    &__item
+        display inline-block
+        display flex
+        align-items center
+
+        &:not(:last-child)::after
+            $size = 4px
+            content ""
+            margin 0 16px 0 14px
+            transform rotate(-45deg)
+            display inline-block
+            width  $size
+            height $size
+            border-style solid
+            border-width 1px
+            border-top-width 0
+            border-left-width 0
+
+    &__link
+        display inline-block
+        opacity 0.3
+        font-size 14px
+        letter-spacing 0.01em
+        font-family $font-alpha
+        text-decoration none
+        color inherit
+        transition .14s
+
+        &:hover
+            opacity 0.6
+
+        &:active
+            opacity 0.1

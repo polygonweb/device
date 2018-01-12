@@ -1,0 +1,55 @@
+.about-block
+
+    &__title
+        margin 0 0 39px
+
+        &::before
+            content ""
+            margin-bottom 40px
+            display block
+            width 80px
+            height 4px
+            background #000
+
+    &__content
+        line-height 2
+        font-size 15px
+        font-weight 300
+        color: $colors["dark"];
+
+        p
+            margin 0
+
+        p + p
+            margin-top 30px
+
+        ul
+            margin 70px 0 0
+            padding 0
+            list-style none
+            font-size 16px
+            font-family $font-beta
+            font-weight 800
+            color: $colors["text"];
+
+            li + li
+                margin-top 10px
+
+            li
+                position relative
+                display flex
+                align-items baseline
+
+                &::before
+                    content ""
+                    margin-right 25px
+                    flex 0 0 auto
+                    opacity 0.3
+                    display block
+                    width 4px
+                    height 4px
+                    border 3px solid #000
+                    border-radius 50%
+
+    &__footer
+        padding 60px 0 80px

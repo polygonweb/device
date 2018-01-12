@@ -1,0 +1,17 @@
+mixin productCard(product)
+    .product-card(data-url=product.image)
+        .product-card__head
+            svg.product-card__image(viewBox="0 0 1 1.0556")
+                image(width="100%", height="100%", preserveAspectRatio="xMidYMid slice")
+            .product-card__tools
+                button.line-btn.product-card__add-btn(type="button") В корзину
+                button.link-btn(type="button") Добавить к сравнению
+        .product-card__body
+            h4.product-card__title #{product.title}
+            .product-card__price #{product.price} #{product.unit}
+
+mixin productGrid(products)
+    .product-grid
+        each product in products
+            .product-grid__cell
+                +productCard(product)

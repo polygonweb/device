@@ -1,0 +1,6 @@
+mixin categoryNav(categoryList)
+    ul.category-nav
+        each item in categoryList
+            li.category-nav__item
+                a.category-link(href="#404", class=`category-link_${item.class}`)
+                    span.category-link__text #{item.text}

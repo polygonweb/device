@@ -1,0 +1,17 @@
+.vendor
+    display block
+    text-decoration none
+    color inherit
+    cursor pointer
+
+    &__image
+        display block
+        width 100%
+        object-fit cover
+        opacity 0.2
+        filter grayscale(1)
+        transition .2s
+
+    &:hover &__image
+        opacity 1
+        filter none

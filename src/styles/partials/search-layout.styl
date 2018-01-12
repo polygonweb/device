@@ -1,0 +1,45 @@
+.search-layout
+    overflow hidden
+
+    &__inner
+        display flex
+        align-items stretch
+
+    &__side
+        position relative
+        flex 0 0 200px
+        width 200px
+        padding-left: $grid["col-width"];
+        padding-right: ($grid["col-width"] + 8px)
+
+        &::before
+        &::after
+            content: ""
+            position absolute
+            z-index -1
+            top 0
+            right 0
+            width 100vw
+
+        &::before
+            bottom 0
+            background #eee
+
+        &::after
+            height $head-filter-height
+            background #dcdcdc
+
+    &__main
+        position relative
+        flex 1 1 0%
+        padding-left 72px
+
+        &::before
+            content ""
+            position absolute
+            z-index -1
+            top 0
+            left 0
+            width 100vw
+            height $head-filter-height
+            background #ebebeb

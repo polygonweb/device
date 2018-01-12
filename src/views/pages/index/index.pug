@@ -1,0 +1,22 @@
+extends /src/views/common/layout
+
+block append defs
+    -
+        pageTitle = "Главная";
+
+block blockContent
+
+    .container
+        +slider(promos)
+
+    .container
+        +categoryNav(categoryList)
+
+    include partials/services-section
+
+    include partials/vendors-section
+
+    include partials/about-section
+
+    section
+        .container

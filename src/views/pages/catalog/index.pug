@@ -1,0 +1,25 @@
+extends /src/views/common/layout
+
+block append defs
+    -
+        pageTitle = "Каталог";
+
+        user = {
+            name: 'Валентин Петухов'
+        }
+
+block blockContent
+
+    .container
+        .page-cursor
+            h1.page-title.title Моноподы для селфи
+
+            ul.breadcrumbs
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#404") Главная
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#404") Каталог товаров
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#404") Моноподы для селфи
+
+    include partials/search-layout
