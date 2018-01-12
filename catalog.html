@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="ctx-no-js" lang="ru">
+	<head>
+		<!--
+		 ____     ___    _      __   __   ____    ___    _   _
+		|  _ \   / _ \  | |     \ \ / /  / ___|  / _ \  | \ | |
+		| |_) | | | | | | |      \ V /  | |  _  | | | | |  \| |
+		|  __/  | |_| | | |___    | |   | |_| | | |_| | | |\  |
+		|_|      \___/  |_____|   |_|    \____|  \___/  |_| \_|
+		-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=1200">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<script>
+			;(function(html) {
+			    html.className = html.className.replace('ctx-no-js', 'ctx-js')
+			})(document.documentElement);
+			
+			;(function(window, document) {
+			    var html = document.documentElement;
+			    html.className += ' ctx-dom-loading';
+			    html.className += ' ctx-page-loading';
+			
+			    function onPageLoad(e) {
+			        window.removeEventListener('load', onPageLoad);
+			        html.className = html.className.replace('ctx-page-loading', 'ctx-page-loaded')
+			    }
+			
+			    function onDomLoad(e) {
+			        document.removeEventListener('DOMContentLoaded', onDomLoad);
+			        html.className = html.className.replace('ctx-dom-loading', 'ctx-dom-loaded')
+			    }
+			
+			    window.addEventListener('load', onPageLoad);
+			    document.addEventListener('DOMContentLoaded', onDomLoad);
+			})(window, document);
+			
+		</script>
+		<title>Device | Каталог</title>
+	</head>
+	<body class="page">
+		<div class="container">
+			<header class="page-header"><a class="logo" href="/">Device</a>
+				<div class="user-block">
+					<div class="user-block__form">
+						<form class="search-form">
+							<svg class="icon icon_search search-form__icon" width="16" height="16">
+								<use xlink:href="assets/img/icons.svg#icon_search"></use>
+							</svg>
+							<input class="search-form__input" type="text" name="search-query" placeholder="Поиск по сайту">
+							<button class="search-form__btn" type="submit">
+								<div class="search-form__btn-line search-form__btn-line_bottom"></div>
+								<div class="search-form__btn-line search-form__btn-line_right"></div>
+								<div class="search-form__btn-line search-form__btn-line_top"></div>
+								<div class="search-form__btn-line search-form__btn-line_left"></div>Найти
+							</button>
+						</form>
+					</div>
+					<ul class="user-block__menu user-menu">
+						<li class="user-menu__item user-menu__item_account"><span class="user-menu__name">
+								<svg class="icon icon_user user-menu__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_user"></use>
+								</svg>Валентин Петухов</span><a class="user-menu__link user-menu__link_logout" href="#404">Выйти</a>
+						</li>
+						<li class="user-menu__item"><a class="user-menu__link" href="#404">
+								<svg class="icon icon_chart user-menu__icon user-menu__icon_chart" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_chart"></use>
+								</svg>Сравнить</a></li>
+						<li class="user-menu__item"><a class="user-menu__link" href="#404">
+								<svg class="icon icon_cart user-menu__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_cart"></use>
+								</svg>Корзина</a></li>
+					</ul>
+				</div>
+				<ul class="main-menu">
+					<li class="main-menu__item main-menu__item_catalog"><a class="main-menu__link" href="#404">Каталог товаров
+							<svg class="icon icon_plus main-menu__icon" width="16" height="16">
+								<use xlink:href="assets/img/icons.svg#icon_plus"></use>
+							</svg></a>
+						<div class="main-menu__nested">
+							<ul class="nested-menu">
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Виртуальная реальность</a></li>
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Моноподы для селфи</a></li>
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Экшн-камеры</a></li>
+							</ul>
+							<ul class="nested-menu">
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Фитнес-браслеты</a></li>
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Умные часы</a></li>
+							</ul>
+							<ul class="nested-menu">
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Квадрокоптеры</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#404">Доставка</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#404">Гарантия</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#404">Контакты</a></li>
+				</ul>
+			</header>
+		</div>
+		<main class="page-main">
+			<div class="container">
+				<div class="page-cursor">
+					<h1 class="page-title title">Моноподы для селфи</h1>
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#404">Главная</a></li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#404">Каталог товаров</a></li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#404">Моноподы для селфи</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="search-layout">
+				<div class="container">
+					<div class="search-layout__inner">
+						<div class="search-layout__side">
+							<div class="filter-panel">
+								<div class="filter-panel__head">Фильтр:</div>
+								<div class="filter-panel__body">
+									<fieldset class="fieldset">
+										<legend class="fieldset__title">Стоимость</legend>
+										<div class="range-slider">
+											<input class="range-slider__input range-slider__input_min" type="hidden" value="0" min="0" max="50000" step="100" name="min-price">
+											<input class="range-slider__input range-slider__input_max" type="hidden" value="5000" min="0" max="50000" step="100" name="max-price">
+											<div class="range-slider__track">
+												<div class="range-slider__fill" style="width: 100px;"></div>
+												<div class="range-slider__thumb range-slider__thumb_min" tabindex="0">
+													<div class="range-slider__value">от <span class="range-slider__ouput range-slider__ouput_min">0</span></div>
+												</div>
+												<div class="range-slider__thumb range-slider__thumb_max" tabindex="0" style="left: 100px;">
+													<div class="range-slider__value">до <span class="range-slider__ouput range-slider__ouput_max">5 000</span></div>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="fieldset">
+										<legend class="fieldset__title">Цвет</legend>
+										<ul class="control-list">
+											<li class="control-list__item">
+												<label class="control  control_type_checkbox">
+													<input class="control__input" type="checkbox" name="color" value="black"/><span class="control__icon"></span><span class="control__content">Черный</span>
+												</label>
+											</li>
+											<li class="control-list__item">
+												<label class="control  control_type_checkbox">
+													<input class="control__input" type="checkbox" name="color" value="white"/><span class="control__icon"></span><span class="control__content">Белый</span>
+												</label>
+											</li>
+											<li class="control-list__item">
+												<label class="control  control_type_checkbox">
+													<input class="control__input" type="checkbox" name="color" value="blue"/><span class="control__icon"></span><span class="control__content">Синий</span>
+												</label>
+											</li>
+											<li class="control-list__item">
+												<label class="control  control_type_checkbox">
+													<input class="control__input" type="checkbox" name="color" value="red"/><span class="control__icon"></span><span class="control__content">Красный</span>
+												</label>
+											</li>
+											<li class="control-list__item">
+												<label class="control  control_type_checkbox">
+													<input class="control__input" type="checkbox" name="color" value="pink"/><span class="control__icon"></span><span class="control__content">Розовый</span>
+												</label>
+											</li>
+										</ul>
+									</fieldset>
+									<fieldset class="fieldset">
+										<legend class="fieldset__title">Bluetooth</legend>
+										<ul class="control-list">
+											<li class="control-list__item">
+												<label class="control  control_type_radio">
+													<input class="control__input" type="radio" name="bluetooth" value="no"/><span class="control__icon"></span><span class="control__content">Нет</span>
+												</label>
+											</li>
+											<li class="control-list__item">
+												<label class="control  control_type_radio">
+													<input class="control__input" type="radio" name="bluetooth" value="yes"/><span class="control__icon"></span><span class="control__content">Есть</span>
+												</label>
+											</li>
+										</ul>
+									</fieldset>
+									<button class="line-btn" type="submit">Показать</button>
+								</div>
+							</div>
+						</div>
+						<div class="search-layout__main">
+							<div class="search-sort">
+								<div class="search-sort__label">Сортировка:</div>
+								<div class="sort-type"><a class="sort-type__item sort-type__item_active" href="#404">По цене</a><a class="sort-type__item" href="#404">По типу</a><a class="sort-type__item" href="#404">По популярности</a></div>
+								<div class="search-sort__order sort-order"><a class="sort-order__btn sort-order__btn_up sort-order__btn_active" href="#404" title="Сортировать по возрастанию"><span class="visuallyhidden">Сортировать по возрастанию</span></a><a class="sort-order__btn sort-order__btn_down" href="#404" title="Сортировать по убыванию"><span class="visuallyhidden">Сортировать по убыванию</span></a></div>
+							</div>
+							<div class="search-results">
+											<div class="product-grid">
+												<div class="product-grid__cell">
+																<div class="product-card" data-url="assets/img/products/item-1.jpg">
+																	<div class="product-card__head">
+																		<svg class="product-card__image" viewBox="0 0 1 1.0556">
+																			<image width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+																		</svg>
+																		<div class="product-card__tools">
+																			<button class="line-btn product-card__add-btn" type="button">В корзину</button>
+																			<button class="link-btn" type="button">Добавить к сравнению</button>
+																		</div>
+																	</div>
+																	<div class="product-card__body">
+																		<h4 class="product-card__title">Любительская селфи-палка</h4>
+																		<div class="product-card__price">500 руб.</div>
+																	</div>
+																</div>
+												</div>
+												<div class="product-grid__cell">
+																<div class="product-card" data-url="assets/img/products/item-2.jpg">
+																	<div class="product-card__head">
+																		<svg class="product-card__image" viewBox="0 0 1 1.0556">
+																			<image width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+																		</svg>
+																		<div class="product-card__tools">
+																			<button class="line-btn product-card__add-btn" type="button">В корзину</button>
+																			<button class="link-btn" type="button">Добавить к сравнению</button>
+																		</div>
+																	</div>
+																	<div class="product-card__body">
+																		<h4 class="product-card__title">Профессиональная селфи-палка</h4>
+																		<div class="product-card__price">1 500 руб.</div>
+																	</div>
+																</div>
+												</div>
+												<div class="product-grid__cell">
+																<div class="product-card" data-url="assets/img/products/item-3.jpg">
+																	<div class="product-card__head">
+																		<svg class="product-card__image" viewBox="0 0 1 1.0556">
+																			<image width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+																		</svg>
+																		<div class="product-card__tools">
+																			<button class="line-btn product-card__add-btn" type="button">В корзину</button>
+																			<button class="link-btn" type="button">Добавить к сравнению</button>
+																		</div>
+																	</div>
+																	<div class="product-card__body">
+																		<h4 class="product-card__title">Непотопляемая селфи-палка</h4>
+																		<div class="product-card__price">2 500 руб.</div>
+																	</div>
+																</div>
+												</div>
+												<div class="product-grid__cell">
+																<div class="product-card" data-url="assets/img/products/item-4.jpg">
+																	<div class="product-card__head">
+																		<svg class="product-card__image" viewBox="0 0 1 1.0556">
+																			<image width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+																		</svg>
+																		<div class="product-card__tools">
+																			<button class="line-btn product-card__add-btn" type="button">В корзину</button>
+																			<button class="link-btn" type="button">Добавить к сравнению</button>
+																		</div>
+																	</div>
+																	<div class="product-card__body">
+																		<h4 class="product-card__title">Селфи-палка «Следуй за мной»</h4>
+																		<div class="product-card__price">4 900 руб.</div>
+																	</div>
+																</div>
+												</div>
+											</div>
+								<div class="paging"><a class="paging__btn paging__btn_prev" href="#404">Назад</a>
+									<ul class="paging-list">
+										<li class="paging-list__item paging-list__item_active"><a class="paging-list__link" href="#404">1</a></li>
+										<li class="paging-list__item"><a class="paging-list__link" href="#404">2</a></li>
+										<li class="paging-list__item"><a class="paging-list__link" href="#404">3</a></li>
+									</ul><a class="paging__btn paging__btn_next" href="#404">Вперед</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="page-footer">
+			<div class="container">
+				<div class="page-footer__row"><a class="logo logo_invert" href="/">Device</a>
+					<ul class="user-menu user-menu_invert">
+						<li class="user-menu__item"><a class="user-menu__link user-menu__link_logout" href="#404">
+								<svg class="icon icon_user user-menu__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_user"></use>
+								</svg>Выйти</a>
+						</li>
+						<li class="user-menu__item"><a class="user-menu__link" href="#404">
+								<svg class="icon icon_chart user-menu__icon user-menu__icon_chart" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_chart"></use>
+								</svg>Сравнить</a></li>
+						<li class="user-menu__item"><a class="user-menu__link" href="#404">
+								<svg class="icon icon_cart user-menu__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_cart"></use>
+								</svg>Корзина</a></li>
+					</ul>
+				</div>
+				<div class="page-footer__row">
+					<div class="company-address">г. Москва, ул. Строителей, 15</div>
+					<ul class="main-menu">
+						<li class="main-menu__item"><a class="main-menu__link" href="#404">Доставка</a></li>
+						<li class="main-menu__item"><a class="main-menu__link" href="#404">Гарантия</a></li>
+						<li class="main-menu__item"><a class="main-menu__link" href="#404">Контакты</a></li>
+					</ul>
+					<div class="company-tel">Тел.: <a class="footer-link" href="tel:+74954959595">+7 (495) 495-95-95</a></div>
+				</div>
+				<div class="page-footer__row">
+					<ul class="social-list">
+						<li class="social-list__item"><a class="social-list__link" href="#404" title="мы в фейсбук">
+								<svg class="icon icon_social-facebook social-list__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_social-facebook"></use>
+								</svg><span class="visuallyhidden">facebook</span></a></li>
+						<li class="social-list__item"><a class="social-list__link" href="#404" title="мы в инстаграм">
+								<svg class="icon icon_social-instagram social-list__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_social-instagram"></use>
+								</svg><span class="visuallyhidden">instagram</span></a></li>
+						<li class="social-list__item"><a class="social-list__link" href="#404" title="мы в твиттер">
+								<svg class="icon icon_social-twitter social-list__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_social-twitter"></use>
+								</svg><span class="visuallyhidden">twitter</span></a></li>
+					</ul><a class="dev-link" href="https://htmlacademy.ru" target="_blank noopener">
+						<svg class="icon icon_htmlacademy dev-link__logo" width="16" height="16">
+							<use xlink:href="assets/img/icons.svg#icon_htmlacademy"></use>
+						</svg><span class="visuallyhidden">htmlacademy.ru</span></a>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/vendors.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

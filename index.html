@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="ctx-no-js" lang="ru">
+	<head>
+		<!--
+		 ____     ___    _      __   __   ____    ___    _   _
+		|  _ \   / _ \  | |     \ \ / /  / ___|  / _ \  | \ | |
+		| |_) | | | | | | |      \ V /  | |  _  | | | | |  \| |
+		|  __/  | |_| | | |___    | |   | |_| | | |_| | | |\  |
+		|_|      \___/  |_____|   |_|    \____|  \___/  |_| \_|
+		-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=1200">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<script>
+			;(function(html) {
+			    html.className = html.className.replace('ctx-no-js', 'ctx-js')
+			})(document.documentElement);
+			
+			;(function(window, document) {
+			    var html = document.documentElement;
+			    html.className += ' ctx-dom-loading';
+			    html.className += ' ctx-page-loading';
+			
+			    function onPageLoad(e) {
+			        window.removeEventListener('load', onPageLoad);
+			        html.className = html.className.replace('ctx-page-loading', 'ctx-page-loaded')
+			    }
+			
+			    function onDomLoad(e) {
+			        document.removeEventListener('DOMContentLoaded', onDomLoad);
+			        html.className = html.className.replace('ctx-dom-loading', 'ctx-dom-loaded')
+			    }
+			
+			    window.addEventListener('load', onPageLoad);
+			    document.addEventListener('DOMContentLoaded', onDomLoad);
+			})(window, document);
+			
+		</script>
+		<title>Device | Главная</title>
+	</head>
+	<body class="page">
+		<div class="container">
+			<header class="page-header"><a class="logo" href="/">Device</a>
+				<div class="user-block">
+					<div class="user-block__form">
+						<form class="search-form">
+							<svg class="icon icon_search search-form__icon" width="16" height="16">
+								<use xlink:href="assets/img/icons.svg#icon_search"></use>
+							</svg>
+							<input class="search-form__input" type="text" name="search-query" placeholder="Поиск по сайту">
+							<button class="search-form__btn" type="submit">
+								<div class="search-form__btn-line search-form__btn-line_bottom"></div>
+								<div class="search-form__btn-line search-form__btn-line_right"></div>
+								<div class="search-form__btn-line search-form__btn-line_top"></div>
+								<div class="search-form__btn-line search-form__btn-line_left"></div>Найти
+							</button>
+						</form>
+					</div>
+					<ul class="user-block__menu user-menu">
+						<li class="user-menu__item user-menu__item_account"><a class="user-menu__link" href="#404">
+								<svg class="icon icon_user user-menu__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_user"></use>
+								</svg>Войти</a>
+						</li>
+						<li class="user-menu__item"><a class="user-menu__link" href="#404">
+								<svg class="icon icon_chart user-menu__icon user-menu__icon_chart" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_chart"></use>
+								</svg>Сравнить</a></li>
+						<li class="user-menu__item"><a class="user-menu__link" href="#404">
+								<svg class="icon icon_cart user-menu__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_cart"></use>
+								</svg>Корзина</a></li>
+					</ul>
+				</div>
+				<ul class="main-menu">
+					<li class="main-menu__item main-menu__item_catalog"><a class="main-menu__link" href="#404">Каталог товаров
+							<svg class="icon icon_plus main-menu__icon" width="16" height="16">
+								<use xlink:href="assets/img/icons.svg#icon_plus"></use>
+							</svg></a>
+						<div class="main-menu__nested">
+							<ul class="nested-menu">
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Виртуальная реальность</a></li>
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Моноподы для селфи</a></li>
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Экшн-камеры</a></li>
+							</ul>
+							<ul class="nested-menu">
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Фитнес-браслеты</a></li>
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Умные часы</a></li>
+							</ul>
+							<ul class="nested-menu">
+								<li class="nested-menu__item"><a class="nested-menu__link" href="#404">Квадрокоптеры</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#404">Доставка</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#404">Гарантия</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#404">Контакты</a></li>
+				</ul>
+			</header>
+		</div>
+		<main class="page-main">
+			<div class="container">
+				<div class="slider">
+					<div class="slider__nav">
+						<button class="slider__nav-item slider__nav-item_active" type="button" data-slide="0" title="Перейти на слайд номер 1">
+							<div class="visuallyhidden">Перейти на слайд номер 1</div>
+						</button>
+						<button class="slider__nav-item" type="button" data-slide="1" title="Перейти на слайд номер 2">
+							<div class="visuallyhidden">Перейти на слайд номер 2</div>
+						</button>
+						<button class="slider__nav-item" type="button" data-slide="2" title="Перейти на слайд номер 3">
+							<div class="visuallyhidden">Перейти на слайд номер 3</div>
+						</button>
+					</div>
+					<div class="slide slide_active slider__slide">
+						<div class="slide__image"><img class="slide__image-src" src="assets/img/promo/slider-1.png" alt="Палка для селфи"/></div>
+						<div class="slide__desc">
+							<div class="slide__number">
+								<div class="slide__number-text">01</div>
+							</div><b class="slide__title title"><span class="slide__title-row"><span class="slide__title-text">Делай селфи, </span></span><span class="slide__title-row"><span class="slide__title-text"> как Бен Стиллер!</span></span></b>
+							<p class="slide__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p><a class="line-btn" href="#404">Подробнее</a>
+							<div class="slide__stat">
+								<ul class="product-stat">
+									<li class="product-stat__item">
+										<div class="product-stat__value">8,5 м</div>
+										<div class="product-stat__key">Длина палки</div>
+									</li>
+									<li class="product-stat__item">
+										<div class="product-stat__value">5 кг</div>
+										<div class="product-stat__key">Вес палки</div>
+									</li>
+									<li class="product-stat__item">
+										<div class="product-stat__value">Карбон</div>
+										<div class="product-stat__key">Материал</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="slide slider__slide">
+						<div class="slide__image"><img class="slide__image-src" src="assets/img/promo/slider-2.png" alt="фитнесс-браслет"/></div>
+						<div class="slide__desc">
+							<div class="slide__number">
+								<div class="slide__number-text">02</div>
+							</div><b class="slide__title title"><span class="slide__title-row"><span class="slide__title-text">Худеем </span></span><span class="slide__title-row"><span class="slide__title-text"> правильно!</span></span></b>
+							<p class="slide__text">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p><a class="line-btn" href="#404">Подробнее</a>
+							<div class="slide__stat">
+								<ul class="product-stat">
+									<li class="product-stat__item">
+										<div class="product-stat__value">48 часов</div>
+										<div class="product-stat__key">Без подзарядки</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="slide slider__slide">
+						<div class="slide__image"><img class="slide__image-src" src="assets/img/promo/slider-3.png" alt="квадрокоптер"/></div>
+						<div class="slide__desc">
+							<div class="slide__number">
+								<div class="slide__number-text">03</div>
+							</div><b class="slide__title title"><span class="slide__title-row"><span class="slide__title-text">Порхает как бабочка, </span></span><span class="slide__title-row"><span class="slide__title-text"> жалит как пчела!</span></span></b>
+							<p class="slide__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p><a class="line-btn" href="#404">Подробнее</a>
+							<div class="slide__stat">
+								<ul class="product-stat">
+									<li class="product-stat__item">
+										<div class="product-stat__value">800 м</div>
+										<div class="product-stat__key">Дальность полета</div>
+									</li>
+									<li class="product-stat__item">
+										<div class="product-stat__value">50 м</div>
+										<div class="product-stat__key">Радиус поражения</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<ul class="category-nav">
+					<li class="category-nav__item"><a class="category-link category-link_vr" href="#404"><span class="category-link__text">Виртуальная реальность</span></a></li>
+					<li class="category-nav__item"><a class="category-link category-link_monopods" href="#404"><span class="category-link__text">Моноподы для селфи</span></a></li>
+					<li class="category-nav__item"><a class="category-link category-link_camera" href="#404"><span class="category-link__text">Экшн-камеры</span></a></li>
+					<li class="category-nav__item"><a class="category-link category-link_fitness" href="#404"><span class="category-link__text">Фитнесс браслеты</span></a></li>
+					<li class="category-nav__item"><a class="category-link category-link_watch" href="#404"><span class="category-link__text">Умные часы</span></a></li>
+					<li class="category-nav__item"><a class="category-link category-link_copter" href="#404"><span class="category-link__text">Квадрокоптеры</span></a></li>
+				</ul>
+			</div>
+			<section class="services-section">
+				<div class="services-section__inner container">
+					<div class="services-section__nav">
+						<ul class="service-nav">
+							<li class="service-nav__item">
+								<button class="line-btn service-nav__link service-nav__link_active" type="button" name="service-name" value="delivery">Доставка</button>
+							</li>
+							<li class="service-nav__item">
+								<button class="line-btn service-nav__link" type="button" name="service-name" value="warranty">Гарантия</button>
+							</li>
+							<li class="service-nav__item">
+								<button class="line-btn service-nav__link" type="button" name="service-name" value="credit">Кредит</button>
+							</li>
+						</ul>
+					</div>
+					<div class="services-section__desc">
+						<div class="services-section__service services-section__service_delivery services-section__service_active" id="delivery">
+							<h3 class="services-section__title title">Доставка</h3>
+							<div class="services-section__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</div>
+						</div>
+						<div class="services-section__service services-section__service_warranty" id="warranty">
+							<h3 class="services-section__title title">Гарантия</h3>
+							<div class="services-section__text">Если из-за возгарания купленного у нас товара у вас сгорит <br> дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</div>
+						</div>
+						<div class="services-section__service services-section__service_credit" id="credit">
+							<h3 class="services-section__title title">Кредит</h3>
+							<div class="services-section__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="vendors-section">
+				<div class="container">
+					<div class="vendors-grid">
+						<div class="vendors-grid__inner">
+							<div class="vendors-grid__cell"><a class="vendor" title="dji"><img class="vendor__image" src="assets/img/vendors/dji.jpg" alt="dji"></a></div>
+							<div class="vendors-grid__cell"><a class="vendor" title="sp-gadjets"><img class="vendor__image" src="assets/img/vendors/sp-gadjets.jpg" alt="sp-gadjets"></a></div>
+							<div class="vendors-grid__cell"><a class="vendor" title="Go Pro"><img class="vendor__image" src="assets/img/vendors/go-pro.jpg" alt="Go Pro"></a></div>
+							<div class="vendors-grid__cell"><a class="vendor" title="Vive"><img class="vendor__image" src="assets/img/vendors/vive.jpg" alt="Vive"></a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about-section">
+				<div class="container">
+					<div class="about-grid">
+						<div class="about-grid__cell about-block">
+							<h4 class="about-block__title title">О нас</h4>
+							<div class="about-block__content">
+								<p>Огромный выбор гаджетов не оставит равнодушным гика, <br> который есть в каждом из нас.</p>
+								<p>Мы можем доставить ваш товар в самые отдаленные точки <br> России! DEVICE работает со многими транспортными компаниями</p>
+								<ul>
+									<li>Деловые Линии</li>
+									<li>Автотрейдинг</li>
+									<li>ЖелДорЭкспедиция</li>
+								</ul>
+							</div>
+							<div class="about-block__footer"><a class="line-btn" href="#404">Подробнее о нас</a></div>
+						</div>
+						<div class="about-grid__cell about-block">
+							<h4 class="about-block__title title">Контакты</h4>
+							<div class="about-block__content">
+								<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+								<p><a class="map-link" id="map-link" href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19,+Санкт-Петербург,+191186/@59.9389581,30.3204762,17z/data=!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833?hl=ru" target="_blank" rel="nofollow noopener"><img class="map-link__img" src="assets/img/map.jpg" width="560" height="220" alt=""></a></p>
+							</div>
+							<div class="about-block__footer"><a class="line-btn" href="#404" data-modal="{ &quot;target&quot;: &quot;#contact-form-modal&quot;, &quot;action&quot;: &quot;open&quot; }">Напишите нам</a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="modal" id="contact-map-modal">
+				<div class="modal__outer">
+					<div class="modal__inner">
+						<div class="container">
+							<div class="modal__dialog">
+								<button class="modal__close" type="button" title="Закрыть"></button>
+								<div class="map" id="map">
+									<div class="map__content" id="contact-map"></div>
+									<div class="map__loading">Загрузка карты. Подождите...</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal" id="contact-form-modal">
+				<div class="modal__outer">
+					<div class="modal__inner">
+						<div class="container">
+							<div class="modal__dialog">
+								<button class="modal__close" type="button" title="Закрыть"></button>
+								<form class="form" action="">
+									<div class="form-grid">
+										<div class="form-grid__cell form-grid__cell_half">
+											<div class="field">
+												<div class="field__label">Ваше имя:</div>
+												<div class="field__control">
+													<input class="text-input" name="name" type="text" required placeholder="Представьтесь, пожалуйста">
+												</div>
+											</div>
+										</div>
+										<div class="form-grid__cell form-grid__cell_half">
+											<div class="field">
+												<div class="field__label">Ваш e-mail:</div>
+												<div class="field__control">
+													<input class="text-input" name="name" type="email" required placeholder="Для отправки ответа">
+												</div>
+											</div>
+										</div>
+										<div class="form-grid__cell">
+											<div class="field">
+												<div class="field__label">Текст письма:</div>
+												<div class="field__control">
+													<textarea class="text-input text-input_multiline" name="message" required placeholder="В свободной форме"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="form-grid__cell">
+											<button class="line-btn" type="submit">Отправить</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section>
+				<div class="container"></div>
+			</section>
+		</main>
+		<footer class="page-footer">
+			<div class="container">
+				<div class="page-footer__row"><a class="logo logo_invert" href="/">Device</a>
+					<ul class="user-menu user-menu_invert">
+						<li class="user-menu__item"><a class="user-menu__link" href="#404">
+								<svg class="icon icon_user user-menu__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_user"></use>
+								</svg>Войти</a>
+						</li>
+						<li class="user-menu__item"><a class="user-menu__link" href="#404">
+								<svg class="icon icon_chart user-menu__icon user-menu__icon_chart" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_chart"></use>
+								</svg>Сравнить</a></li>
+						<li class="user-menu__item"><a class="user-menu__link" href="#404">
+								<svg class="icon icon_cart user-menu__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_cart"></use>
+								</svg>Корзина</a></li>
+					</ul>
+				</div>
+				<div class="page-footer__row">
+					<div class="company-address">г. Москва, ул. Строителей, 15</div>
+					<ul class="main-menu">
+						<li class="main-menu__item"><a class="main-menu__link" href="#404">Доставка</a></li>
+						<li class="main-menu__item"><a class="main-menu__link" href="#404">Гарантия</a></li>
+						<li class="main-menu__item"><a class="main-menu__link" href="#404">Контакты</a></li>
+					</ul>
+					<div class="company-tel">Тел.: <a class="footer-link" href="tel:+74954959595">+7 (495) 495-95-95</a></div>
+				</div>
+				<div class="page-footer__row">
+					<ul class="social-list">
+						<li class="social-list__item"><a class="social-list__link" href="#404" title="мы в фейсбук">
+								<svg class="icon icon_social-facebook social-list__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_social-facebook"></use>
+								</svg><span class="visuallyhidden">facebook</span></a></li>
+						<li class="social-list__item"><a class="social-list__link" href="#404" title="мы в инстаграм">
+								<svg class="icon icon_social-instagram social-list__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_social-instagram"></use>
+								</svg><span class="visuallyhidden">instagram</span></a></li>
+						<li class="social-list__item"><a class="social-list__link" href="#404" title="мы в твиттер">
+								<svg class="icon icon_social-twitter social-list__icon" width="16" height="16">
+									<use xlink:href="assets/img/icons.svg#icon_social-twitter"></use>
+								</svg><span class="visuallyhidden">twitter</span></a></li>
+					</ul><a class="dev-link" href="https://htmlacademy.ru" target="_blank noopener">
+						<svg class="icon icon_htmlacademy dev-link__logo" width="16" height="16">
+							<use xlink:href="assets/img/icons.svg#icon_htmlacademy"></use>
+						</svg><span class="visuallyhidden">htmlacademy.ru</span></a>
+				</div>
+			</div>
+		</footer>
+		<div class="modal" id="contact-map-modal">
+			<div class="modal__outer">
+				<div class="modal__inner">
+					<div class="container">
+						<div class="modal__dialog">
+							<button class="modal__close" type="button" title="Закрыть"></button>
+							<div class="map" id="map">
+								<div class="map__content" id="contact-map"></div>
+								<div class="map__loading">Загрузка карты. Подождите...</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="contact-form-modal">
+			<div class="modal__outer">
+				<div class="modal__inner">
+					<div class="container">
+						<div class="modal__dialog">
+							<button class="modal__close" type="button" title="Закрыть"></button>
+							<form class="form" action="">
+								<div class="form-grid">
+									<div class="form-grid__cell form-grid__cell_half">
+										<div class="field">
+											<div class="field__label">Ваше имя:</div>
+											<div class="field__control">
+												<input class="text-input" name="name" type="text" required placeholder="Представьтесь, пожалуйста">
+											</div>
+										</div>
+									</div>
+									<div class="form-grid__cell form-grid__cell_half">
+										<div class="field">
+											<div class="field__label">Ваш e-mail:</div>
+											<div class="field__control">
+												<input class="text-input" name="name" type="email" required placeholder="Для отправки ответа">
+											</div>
+										</div>
+									</div>
+									<div class="form-grid__cell">
+										<div class="field">
+											<div class="field__label">Текст письма:</div>
+											<div class="field__control">
+												<textarea class="text-input text-input_multiline" name="message" required placeholder="В свободной форме"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="form-grid__cell">
+										<button class="line-btn" type="submit">Отправить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="assets/js/vendors.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
