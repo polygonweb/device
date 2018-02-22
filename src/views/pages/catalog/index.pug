@@ -6,7 +6,13 @@ block append defs
 
         user = {
             name: 'Валентин Петухов'
-        }
+        };
+
+        var breadcrumbsData = [
+            { url: 'catalog.html', text: 'Главная' },
+            { url: 'catalog.html', text: 'Каталог товаров' },
+            { url: 'catalog.html', text: 'Моноподы для селфи' }
+        ];
 
 block blockContent
 
@@ -14,12 +20,6 @@ block blockContent
         .page-cursor
             h1.page-title.title Моноподы для селфи
 
-            ul.breadcrumbs
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="#404") Главная
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="#404") Каталог товаров
-                li.breadcrumbs__item
-                    a.breadcrumbs__link(href="#404") Моноподы для селфи
+            +breadcrumbs(breadcrumbsData)
 
     include partials/search-layout

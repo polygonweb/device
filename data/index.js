@@ -102,12 +102,12 @@ module.exports = {
 
     // список категорий товаров на главной
     categoryList: [
-        { text: 'Виртуальная реальность', class: 'vr' },
-        { text: 'Моноподы для селфи', class: 'monopods' },
-        { text: 'Экшн-камеры', class: 'camera' },
-        { text: 'Фитнесс браслеты', class: 'fitness' },
-        { text: 'Умные часы', class: 'watch' },
-        { text: 'Квадрокоптеры', class: 'copter' }
+        { url: 'catalog.html', text: 'Виртуальная реальность', class: 'vr' },
+        { url: 'catalog.html', text: 'Моноподы для селфи', class: 'monopods' },
+        { url: 'catalog.html', text: 'Экшн-камеры', class: 'camera' },
+        { url: 'catalog.html', text: 'Фитнесс браслеты', class: 'fitness' },
+        { url: 'catalog.html', text: 'Умные часы', class: 'watch' },
+        { url: 'catalog.html', text: 'Квадрокоптеры', class: 'copter' }
     ],
 
     serviceData: [
