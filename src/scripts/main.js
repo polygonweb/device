@@ -42,10 +42,12 @@ initLazyGallery();
 (function() {
     let sliderElement = document.querySelector(Slider.SLIDER_SELECTOR);
     let navItemsElems = [].slice.call(document.querySelectorAll(Slider.NAV_ITEM_SELECTOR));
-
-    if (!sliderElement && !navItemsElems) return;
-    let slider = new Slider(sliderElement);
-    navItemsElems.forEach(item => item.addEventListener('click', slider));
+    if (sliderElement) {
+        let slider = new Slider(sliderElement);
+        if (navItemsElems) {
+            navItemsElems.forEach(item => item.addEventListener('click', slider));
+        }
+    }
 })();
 
 typeof initServices === 'function' && initServices();
