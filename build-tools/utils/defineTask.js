@@ -2,6 +2,7 @@
  * Создание тасков, которые загружаются по требованию
  */
 
+const chalk = require('chalk');
 const errorHandler = require('./errorHandler');
 
 const defineTask = (gulp, plugins) => (taskPath) => (customConfig = {}) => {
@@ -27,8 +28,8 @@ const defineTask = (gulp, plugins) => (taskPath) => (customConfig = {}) => {
         try {
             return task(gulp, plugins)(taskConfig)(done);
         } catch(e) {
-            const { util } = plugins;
-            util.log(util.colors.red(e));
+            const { logger } = plugins;
+            logger.error(module)(e);
             return done();
         }
     };
