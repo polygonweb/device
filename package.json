@@ -1,6 +1,7 @@
 {
   "name": "polygon-template",
-  "version": "0.0.3",
+  "version": "0.1.0",
+  "author": "monochromer@mail.ru",
   "scripts": {
     "start": "cross-env NODE_ENV=development gulp dev",
     "build": "cross-env NODE_ENV=production gulp build",
@@ -12,7 +13,6 @@
     "minor": "npm version minor",
     "major": "npm version major"
   },
-  "author": "monochromer@mail.ru",
   "devDependencies": {
     "autoprefixer": "8.0.0",
     "babel-core": "6.26.0",
@@ -36,7 +36,6 @@
     "deepmerge": "2.0.1",
     "del": "3.0.0",
     "gulp": "4.0.0",
-    "gulp-cli": "2.0.1",
     "gulp-deploy-git": "0.5.3",
     "gulp-if": "2.0.2",
     "gulp-imagemin": "4.1.0",
@@ -63,7 +62,7 @@
     "vinyl-buffer": "1.0.1",
     "vinyl-named": "1.1.0",
     "webpack": "3.11.0",
-    "webpack-dev-middleware": "2.0.5",
+    "webpack-dev-middleware": "2.0.6",
     "webpack-hot-middleware": "2.21.0",
     "webpack-stream": "4.0.2"
   },
